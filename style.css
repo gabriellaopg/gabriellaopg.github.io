@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fafafa;
+}
+
+nav {
+    background: #1a73a8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #145a94;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 2rem 0;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.header-text {
+    flex: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #1a73a8;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: #1a73a8;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.crp {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.page-title {
+    padding-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 1.5rem auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+.especialidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.tag {
+    background: #e3f2fd;
+    color: #1a73a8;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.item {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.item-logo {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.item-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.item-content {
+    flex: 1;
+}
+
+.item-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+.item-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.item-date {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 0.8rem;
+}
+
+.item-description {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.skill-tag {
+    background: #e3f2fd;
+    color: #1a73a8;
+    padding: 0.25rem 0.7rem;
+    border-radius: 15px;
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+.locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+}
+
+.location-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-left: 4px solid #1a73a8;
+}
+
+.location-card h3 {
+    color: #1a73a8;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.location-card a {
+    color: #1a73a8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.location-card a:hover {
+    text-decoration: underline;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #666;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    color: #333;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.map-embed {
+    width: 100%;
+    height: 220px;
+    border: 0;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+}
+
+.contact-section {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-top: 0;
+    border-bottom: none;
+}
+
+.first-session-highlight {
+    background: #1a73a8;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.phone {
+    font-size: 1.2rem;
+    color: #1a73a8;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.whatsapp-button:hover {
+    background: #20ba5a;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #1a73a8;
+    color: white;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background: #145a94;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #999;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        padding: 0.8rem 0.4rem;
+        font-size: 0.85rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .header-photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .especialidades {
+        justify-content: center;
+    }
+
+    .locations {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        gap: 0.8rem;
+    }
+
+    .item-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
