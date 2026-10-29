@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriella Oliveira Pereira - Neuropsicóloga e Psicóloga Clínica em São Paulo</title>
+    <meta name="description" content="Neuropsicóloga e Psicóloga Clínica especializada em ACT, psicologia infantil, autismo e neuropsicologia. Atendimento em Pinheiros e Vila Mariana, São Paulo.">
+    <meta name="keywords" content="psicóloga, neuropsicóloga, psicologia clínica, ACT, autismo, psicologia infantil, São Paulo">
+    <meta name="author" content="Gabriella Oliveira Pereira">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Gabriella Oliveira Pereira - Psicóloga",
+        "description": "Neuropsicóloga e Psicóloga Clínica especializada em ACT, psicologia infantil e neuropsicologia",
+        "image": "https://www.gabriellapereira.psi.br/og-image.jpg",
+        "url": "https://www.gabriellapereira.psi.br",
+        "telephone": "+5511975732799",
+        "areaServed": ["Pinheiros", "Vila Mariana", "São Paulo"],
+        "priceRange": "$$",
+        "address": [
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "Rua Claudio Soares, 72",
+                "addressLocality": "São Paulo",
+                "addressRegion": "SP",
+                "postalCode": "05422-030",
+                "addressCountry": "BR"
+            },
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "Rua Humberto I, 295",
+                "addressLocality": "São Paulo",
+                "addressRegion": "SP",
+                "postalCode": "04018-030",
+                "addressCountry": "BR"
+            }
+        ],
+        "profession": ["Psicóloga", "Neuropsicóloga"],
+        "knowsAbout": ["Terapia de Aceitação e Compromisso", "Psicologia Clínica", "Neuropsicologia", "Autismo", "Psicologia Infantil"]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 2rem 0;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .header-photo {
+            flex-shrink: 0;
+        }
+
+        .header-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #1a73a8;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .crp {
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .bio p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            font-size: 1rem;
+        }
+
+        .especialidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .tag {
+            background: #e3f2fd;
+            color: #1a73a8;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .locations {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem auto;
+        }
+
+        .location-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border-left: 4px solid #1a73a8;
+        }
+
+        .location-card h3 {
+            color: #1a73a8;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .location-card p {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .location-card a {
+            color: #1a73a8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .location-card a:hover {
+            text-decoration: underline;
+        }
+
+        .info-row {
+            margin-bottom: 1rem;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-value {
+            color: #333;
+            margin-top: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-section {
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #1a73a8;
+            margin-bottom: 1rem;
+        }
+
+        .phone {
+            font-size: 1.2rem;
+            color: #1a73a8;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .phone:hover {
+            text-decoration: underline;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            background: #20ba5a;
+        }
+
+        .horario {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .horario h3 {
+            color: #1a73a8;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #999;
+            font-size: 0.9rem;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 3rem;
+        }
+
+        .formacao {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .formacao h2 {
+            color: #1a73a8;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .formacao-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .formacao-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .formacao-item h4 {
+            color: #333;
+            margin-bottom: 0.3rem;
+            font-size: 1rem;
+        }
+
+        .formacao-item p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .highlight-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .highlight-box h2 {
+            color: #1a73a8;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .first-session-highlight {
+            background: #1a73a8;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #1a73a8;
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #145a94;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .locations {
+                grid-template-columns: 1fr;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .especialidades {
+                justify-content: center;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+
+            .header-text {
+                flex: auto;
+            }
+
+            .header-photo img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-photo">
+                <img src="gabriella.jpg" alt="Gabriella Oliveira Pereira">
+            </div>
+            <div class="header-text">
+                <h1>Gabriella Oliveira Pereira</h1>
+                <p class="subtitle">Neuropsicóloga e Psicóloga Clínica</p>
+                <p class="crp">CRP-SP 06/15271912</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="bio">
+            <p>Sou neuropsicóloga e psicóloga clínica com formação em Terapia de Aceitação e Compromisso (ACT). Como psicoterapeuta clínica desde 2018, meu principal objetivo é oferecer um atendimento acolhedor e baseado em evidências, possibilitando aos meus pacientes maior conhecimento de si e de seus sentimentos.</p>
+
+            <p>Trabalho com crianças, adolescentes e adultos, com especialização em psicologia infantil, intervenções precoces no autismo e neuropsicologia.</p>
+
+            <div class="especialidades">
+                <span class="tag">ACT - Terapia de Aceitação e Compromisso</span>
+                <span class="tag">Psicologia Clínica</span>
+                <span class="tag">Neuropsicologia</span>
+                <span class="tag">Psicologia Infantil</span>
+                <span class="tag">Autismo</span>
+            </div>
+        </section>
+
+        <section class="highlight-box">
+            <h2>✨ Especialista em Neuropsicologia e ACT</h2>
+            <p><strong>Pós-graduação em Neuropsicologia</strong> — Faculdade Israelita Albert Einstein (2024-2025)</p>
+            <p>Avaliação e diagnóstico neuropsicológico para dificuldades cognitivas, transtornos do neurodesenvolvimento e condições neurológicas.</p>
+            <br>
+            <p><strong>Formação em Terapia de Aceitação e Compromisso (ACT)</strong> — Faculdade de Medicina da USP (2026)</p>
+            <p>Abordagem baseada em evidências para ansiedade, depressão, autismo em adultos e desenvolvimento de resiliência psicológica.</p>
+        </section>
+
+        <section class="horario">
+            <h3>📅 Horário de Atendimento</h3>
+            <p><strong>Segunda a sábado:</strong> 8h às 20h</p>
+        </section>
+
+        <section class="locations">
+            <div class="location-card">
+                <h3>📍 Pinheiros</h3>
+                <div class="info-row">
+                    <p class="info-label">Endereço</p>
+                    <p class="info-value">Rua Claudio Soares, 72<br>05422-030 — São Paulo, SP</p>
+                </div>
+                <a href="https://maps.google.com/maps?q=Rua+Claudio+Soares+72+05422030+Sao+Paulo+SP" target="_blank" rel="noopener">Ver no Google Maps →</a>
+            </div>
+
+            <div class="location-card">
+                <h3>📍 Vila Mariana</h3>
+                <div class="info-row">
+                    <p class="info-label">Endereço</p>
+                    <p class="info-value">Rua Humberto I, 295<br>04018-030 — São Paulo, SP</p>
+                </div>
+                <a href="https://maps.google.com/maps?q=Rua+Humberto+I+295+04018030+Sao+Paulo+SP" target="_blank" rel="noopener">Ver no Google Maps →</a>
+            </div>
+        </section>
+
+        <div class="location-card" style="grid-column: 1 / -1; border-left-color: #4CAF50;">
+            <h3>💻 Teleconsulta</h3>
+            <p>Também realizo atendimentos online para sua comodidade.</p>
+        </div>
+
+        <section class="contact-section">
+            <h2>Entre em Contato</h2>
+            <div class="first-session-highlight">
+                🎉 Agende sua primeira sessão grátis!
+            </div>
+            <a href="tel:+5511975732799" class="phone">+55 11 97573-2799</a>
+            <br><br>
+            <a href="https://wa.me/5511975732799?text=Olá%2C%20gostaria%20de%20agendar%20uma%20sessão%20grátis" class="whatsapp-button" target="_blank" rel="noopener">Enviar WhatsApp</a>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gabriellaop/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+                <a href="https://www.instagram.com/gabriellaop.psi/" target="_blank" rel="noopener" title="Instagram">📷</a>
+            </div>
+        </section>
+
+        <section class="formacao">
+            <h2>Formação</h2>
+
+            <div class="formacao-item">
+                <h4>Pós-graduação em Terapia de Aceitação e Compromisso (ACT)</h4>
+                <p>Faculdade de Medicina da Universidade de São Paulo</p>
+                <p>2026</p>
+            </div>
+
+            <div class="formacao-item">
+                <h4>Pós-graduação em Neuropsicologia</h4>
+                <p>Faculdade Israelita Albert Einstein</p>
+                <p>2024-2025</p>
+            </div>
+
+            <div class="formacao-item">
+                <h4>Bacharelado em Psicologia</h4>
+                <p>Universidade São Judas Tadeu</p>
+                <p>2014-2018</p>
+            </div>
+
+            <div class="formacao-item">
+                <h4>Especializações Complementares</h4>
+                <p>ABA e Estratégias Naturalistas (2020)</p>
+                <p>Intervenções Precoces no Autismo (2019-2021)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gabriella Oliveira Pereira. Todos os direitos reservados.</p>
+        <p>CRP-SP 06/15271912</p>
+    </footer>
+</body>
+</html>
