@@ -314,6 +314,13 @@ h2 {
     background: #20ba5a;
 }
 
+.horario-contato {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
