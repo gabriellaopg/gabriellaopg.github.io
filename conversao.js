@@ -1,5 +1,5 @@
 // Rótulo da ação de conversão do Google Ads (formato AW-18455720303/xxxxxxxx). Vazio = só mede pageview.
-var CONVERSAO_ROTULO = '';
+var CONVERSAO_ROTULO = 'AW-18455720303/3qxZCI7RorAdEO_ir-BE';
 
 document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href^="tel:"]');
