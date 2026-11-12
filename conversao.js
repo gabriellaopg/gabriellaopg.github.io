@@ -5,7 +5,7 @@ var CONVERSAO_ROTULO = 'AW-18455720303/3qxZCI7RorAdEO_ir-BE';
 function localDoClique(el) {
     if (el.closest('nav')) return 'menu';
     if (el.closest('footer')) return 'rodape';
-    if (el.closest('.contact-section')) return 'contato';
+    if (el.closest('.contact-section, .hero-cta')) return 'contato';
     return 'texto';
 }
 
